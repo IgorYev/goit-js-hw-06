@@ -9,17 +9,16 @@ const ingredients = [
 
 
 const ulList = document.querySelector("#ingredients");
+const fragment = document.createDocumentFragment();
+
 ingredients.forEach(ingredient => {
   const liList = document.createElement("li");
   liList.textContent = ingredient;
   liList.classList.add("item");
-  ulList.appendChild(liList);
-
-  console.log(ulList);
-  console.log(liList);
+  fragment.appendChild(liList);
 });
 
-
+ulList.appendChild(fragment);
 
 
 

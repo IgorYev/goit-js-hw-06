@@ -1,5 +1,4 @@
 const validInput = document.getElementById('validation-input');
-console.log(validInput);
 
 function checkInputLength(event) {
   const expectedLength = parseInt(validInput.dataset.length, 10);
